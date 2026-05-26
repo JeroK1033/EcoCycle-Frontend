@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "EcoCycle",
+    "slug": "ecocycle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/Reciclar.png",
+    "scheme": "ecocycle",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0D5C3A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ecocycle.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "EcoCycle necesita acceso a la cámara para analizar tus residuos con IA."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D5C3A"
+      },
+      "package": "com.ecocycle.app",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "EcoCycle necesita acceso a la cámara para analizar tus residuos con IA."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
